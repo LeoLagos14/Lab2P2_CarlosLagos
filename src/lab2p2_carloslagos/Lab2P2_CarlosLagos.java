@@ -22,6 +22,9 @@ public class Lab2P2_CarlosLagos {
         Scanner lea = new Scanner(System.in);
         Random r = new Random();
         
+        Object [][]tablero = new Object[30][30];
+        tablero = LlenaTablero();
+        ImprimeTablero(tablero);
         boolean centinela = true;
         
         while(centinela == true){
@@ -68,4 +71,22 @@ public class Lab2P2_CarlosLagos {
         
     }//fin main
     
+    public static Object[][]LlenaTablero(){
+        Object [][]matrizt = new Object [30][30];
+        
+        for (int i = 0; i < 30; i++) {
+            for (int j = 0; j < 30; j++) {
+                
+            }
+        }
+        return matrizt;
+    }
+    public static void ImprimeTablero(Object [][] matriz){
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                System.out.print("["+matriz[i][j]+"] ");
+            }
+            System.out.println();
+        }
+    }
 }//fin clase
