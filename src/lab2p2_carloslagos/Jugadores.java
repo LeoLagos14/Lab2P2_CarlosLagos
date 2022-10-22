@@ -17,7 +17,7 @@ public class Jugadores {
     private char caracter;
     private int numvictorias;
     private int dinero;
-    private ArrayList<String> items = new ArrayList();
+    public ArrayList<String> items = new ArrayList();
     
     public Jugadores(){
         
