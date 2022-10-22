@@ -24,6 +24,8 @@ public class Lab2P2_CarlosLagos {
     static ArrayList botslist = new ArrayList();
     
     public static void main(String[] args) {
+        players = JugadoresPredeterminado();
+        botslist = BotsPredeterminado();
         
        
         
@@ -110,12 +112,24 @@ public class Lab2P2_CarlosLagos {
         
     }//fin main
     
-    public static void JugadoresPredeterminado(){
+    public static ArrayList JugadoresPredeterminado(){
        
-        players.add(new Jugadores("Juanito",'j', 0, 0));
-        players.add(new Jugadores("Pedrito",'p', 0, 0));
-        players.add(new Jugadores("Manuelito",'m', 0, 0));
-        players.add(new Jugadores("Carmelito",'c', 0, 0));
+        ArrayList p = new ArrayList();
+        p.add(new Jugadores("Juanito",'j', 0, 0));
+        p.add(new Jugadores("Pedrito",'p', 0, 0));
+        p.add(new Jugadores("Manuelito",'m', 0, 0));
+        p.add(new Jugadores("Carmelito",'c', 0, 0));
+        
+        return p;
+    }
+     public static ArrayList BotsPredeterminado(){
+       
+        ArrayList b = new ArrayList();
+        b.add(new Bots(100,'A', "Pelon", "hello kid", "POST MORTEM"));
+        b.add(new Bots(200,'B', "Ojos claros", "comee hereee","POST MORTEM"));
+        
+        
+        return b;
     }
     public static void AItems(ArrayList players){
         System.out.println("Ingrese la posicion: ");
